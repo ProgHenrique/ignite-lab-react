@@ -1,0 +1,6 @@
+query IsAvailableLesson ($slug: String) {
+  lesson(where: {slug: $slug}) {
+    slug
+    availableAt
+  }
+}
